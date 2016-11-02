@@ -13,7 +13,7 @@ CFLAGS += -DLITTLE_ENDIAN=3412 -DBYTE_ORDER=LITTLE_ENDIAN
 endif
 
 CFLAGS += -DDTLSv12 -DWITH_SHA256 -DWITH_DTLS=1
-tinydtls_src = dtls.c crypto.c hmac.c rijndael.c sha2.c ccm.c netq.c dtls_time.c peer.c session.c
+tinydtls_src = dtls.c dtls_crypto.c hmac.c rijndael.c sha2.c dtls_ccm.c netq.c dtls_time.c peer.c session.c
 
 # This adds support for TLS_PSK_WITH_AES_128_CCM_8
 CFLAGS += -DDTLS_PSK=1
