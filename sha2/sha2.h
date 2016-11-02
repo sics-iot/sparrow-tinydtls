@@ -39,6 +39,7 @@
 extern "C" {
 #endif
 
+#define SHA2_USE_INTTYPES_H 1
 
 /*
  * Import u_intXX_t size_t type definitions from system headers.  You
