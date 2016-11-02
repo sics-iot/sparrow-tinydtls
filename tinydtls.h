@@ -33,4 +33,6 @@
 /** Defined to 1 if tinydtls is built for Contiki OS */
 #define WITH_CONTIKI 1
 
+#define DTLS_PEERS_NOHASH 1
+
 #endif /* _DTLS_TINYDTLS_H_ */
