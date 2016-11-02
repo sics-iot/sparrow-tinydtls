@@ -28,7 +28,9 @@ clock_time_t dtls_clock_offset;
 
 void
 dtls_clock_init(void) {
+#if 0
   clock_init();
+#endif
   dtls_clock_offset = clock_time();
 }
 
