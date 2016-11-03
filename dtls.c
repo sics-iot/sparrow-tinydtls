@@ -4054,9 +4054,10 @@ PROCESS_THREAD(dtls_retransmit_process, ev, data)
 	
 	now = clock_time();
 	if (node && node->t <= now) {
-	  dtls_retransmit(&the_dtls_context, node);
+	  dtls_retransmit(&the_dtls_context,
+                          netq_pop_first(&the_dtls_context.sendqueue));
 
-          netq_node_free(node);
+          /* netq_node_free(node); */
 	  node = netq_head(&the_dtls_context.sendqueue);
 	}
 
