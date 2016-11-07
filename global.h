@@ -48,7 +48,7 @@ typedef unsigned char uint48[6];
     with ECDSA needs at least 220 */
 #ifdef WITH_CONTIKI
 #ifdef DTLS_ECC
-#define DTLS_MAX_BUF 200
+#define DTLS_MAX_BUF 300
 #else /* DTLS_ECC */
 #define DTLS_MAX_BUF 100
 #endif /* DTLS_ECC */
