@@ -26,6 +26,8 @@
 
 #ifdef WITH_CONTIKI
 # ifndef DEBUG
+#  define DEBUG DEBUG_NONE
+# else
 #  define DEBUG DEBUG_PRINT
 # endif /* DEBUG */
 #include "net/ip/uip-debug.h"
