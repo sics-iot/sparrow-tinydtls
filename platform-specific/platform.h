@@ -48,10 +48,10 @@
 #  include "platform-specific/config-cc2538dk.h"
 #endif /* CONTIKI_TARGET_CC2538DK */
 
-#ifdef CONTIKI_TARGET_FELICIA
+#ifdef PLATFORM_HAS_CC2538
 #define CONTIKI_TARGET_CC2538DK 1
 #  include "platform-specific/config-cc2538dk.h"
-#endif /* CONTIKI_TARGET_FELICIA */
+#endif /* PLATFORM_HAS_CC2538 */
 
 #ifdef CONTIKI_TARGET_WISMOTE
 #  include "platform-specific/config-wismote.h"
